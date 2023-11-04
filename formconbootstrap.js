@@ -1,6 +1,6 @@
-var seleccionarEstado = document.getElementById('estado');
-var estadoSeleccionado = document.getElementById('estadoSeleccionado');
+const estado = document.getElementById("estado");
+const estadoSeleccionado = document.getElementById("estadoSeleccionado");
 
-seleccionarEstado.addEventListener('change', (e) => {
-  estadoSeleccionado.innerText = e.target.value;
-})
+estado.addEventListener("change", function () {
+  estadoSeleccionado.textContent = this.value;
+});
